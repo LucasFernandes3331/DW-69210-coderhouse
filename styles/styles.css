@@ -1,5 +1,44 @@
+/* #706D54 #A08963 #DBDBDB*/
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+header{
+    background-color: #DBDBDB;
+    font-family: "Nunito", sans-serif;
+}
+
+.nav-link{
+    color: #000F;
+}
+
+.imagen-logo-header{
+    height: 80px;
+}
+
+h1{
+    font-family: "Bebas Neue", sans-serif;
+    color: #FCA313;
+}
+
+body{
+    background-color: #706D54;
+}
+
+.primer-section-inicio{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://thewotme.com/wp-content/uploads/2014/01/abbey-2293953_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #DBDBDB;
+    font-family: "Nunito", sans-serif;
+    text-shadow: 2px -1px 7px rgba(112,109,84,1);
+    font-size: 140%;
+    text-align:center;
+}
+
+.imagen-beatles-inicio{
+    height: 480px;
 }
