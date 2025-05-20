@@ -16,7 +16,8 @@ header{
 }
 
 .imagen-logo-header{
-    height: 80px;
+    height: 60px;
+    padding-left: 30px;
 }
 
 h1{
@@ -39,6 +40,60 @@ body{
     text-align:center;
 }
 
-.imagen-beatles-inicio{
-    height: 480px;
+.segundo-section-inicio{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.div-noticias-inicio{
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0px 20px 0px;
+}
+
+.div-noticias-inicio a{
+    text-decoration: none;
+    color: #000F;
+}
+
+.imagen-noticia-casting{
+    width: 80%;
+}
+
+.imagen-noticia-nowandthen{
+    width: 80%;
+}
+
+.imagen-noticia-letitbe{
+    width: 80%;
+}
+
+footer{
+    background-color: #DBDBDB;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.div-footer-apple{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.apple-imagen-footer{
+    width: 12%;
+}
+
+.logos-media-footer{
+    width: 20%;
+}
+
+.div-media-footer{
+    display: flex;
+    align-items: center;
+    
 }
