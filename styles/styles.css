@@ -27,8 +27,10 @@ h1{
     padding-top: 20px;
 }
 
+
 body{
     background-color: #706D54;
+    font-family: "Nunito", sans-serif;
 }
 
 .primer-section-inicio{
@@ -158,20 +160,41 @@ footer{
     color: #000F;
 }
 
+
 .formulario{
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
+.div-imagenes-galeria{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0px 80px 0px;
+}
+
+.imagenes-galeria{
+    width: 500px;
+}
+
+.section2-galeria h2{
+    text-align: center;
+    padding-top: 1em;
+}
 
 @media (max-width:480px){
+    .div-noticias-inicio{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
     .primer-section-inicio{
         font-size: 20px;
         text-align: center;
     }
     .imagen-beatles-inicio{
-        width: 410px;
+        width: 380px;
     }
 .segundo-section-inicio{
     width: 380px;
@@ -184,4 +207,40 @@ footer{
     .div-footer-apple{
         display: flex;
         flex-direction: column;
-    }}
+        justify-content: center;
+        text-align: center;
+        padding-right: 15px;
+    }
+    .div-media-footer{
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .cards-div1{
+        display: flex;
+        flex-direction: column;
+    }
+    .cards-div2{
+        display: flex;
+        flex-direction: column;
+    }
+    .mapa-contactos{
+        width: 400px;
+    }
+    .contactos-info{
+        text-align: center;
+    }
+    .formulario-section p{
+        text-align: center;
+    }
+    .div-imagenes-galeria{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .imagenes-galeria{
+        width: 340px;
+        margin: 10px;
+    }
+    }
