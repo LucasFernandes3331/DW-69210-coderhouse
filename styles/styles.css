@@ -138,6 +138,66 @@ footer{
     font-family: "Nunito", sans-serif;
 }
 
+.albumes-grid{
+    display: grid;
+    grid-template-areas: 
+    "titulo titulo titulo"
+    "please texto1 texto1"
+    "texto2 texto2 revolver"
+    "sgtpeppers texto3 texto3"
+    "texto4 texto4 abbeyroad";
+
+
+    grid-template-columns: 2fr 5fr 2fr;
+    grid-template-rows: 2fr 10fr 10fr 10fr 10fr;
+
+    align-items: center;
+    font-size: 28px;
+    padding-left: 14px;
+    color: #000F;
+}
+
+.grid-titulo{
+    grid-area: titulo;
+}
+
+.grid-texto-please{
+    grid-area: texto1;
+}
+
+.grid-texto-revolver{
+    grid-area: texto2;
+}
+
+
+.grid-texto-sgtpeppers{
+    grid-area: texto3;
+}
+
+.grid-texto-abbeyroad{
+    grid-area: texto4;
+}
+
+.grid-img-please{
+    height: 350px;
+    grid-area: please;
+}
+
+.grid-img-revolver{
+    height: 350px;
+    grid-area: revolver;
+}
+
+.grid-img-sgtpeppers{
+    height: 350px;
+    grid-area: sgtpeppers;
+}
+
+.grid-img-abbeyroad{
+    height: 350px;
+    grid-area: abbeyroad;
+}
+
 .mapa-texto{
     display: flex;
     flex-direction: column;
@@ -188,6 +248,7 @@ footer{
         flex-direction: column;
         padding: 0;
         align-items: center;
+        justify-content: center;
     }
     .primer-section-inicio{
         font-size: 20px;
@@ -216,6 +277,10 @@ footer{
         justify-content: center;
         padding: 0;
     }
+    .card{
+        margin: 0px;
+        margin-top: 60px;
+    }
     .cards-div1{
         display: flex;
         flex-direction: column;
@@ -223,6 +288,42 @@ footer{
     .cards-div2{
         display: flex;
         flex-direction: column;
+    }
+    .albumes-grid{
+        grid-template-areas: 
+        "titulo"
+        "please"
+        "texto1"
+        "revolver"
+        "texto2"
+        "sgtpeppers"
+        "texto3"
+        "abbeyroad"
+        "texto4";
+        grid-template-columns: 100%;
+        grid-template-rows: 0fr 0fr 200px 0fr 200px 0fr 200px 0fr 200px;
+        font-size: 18px;
+    }
+    .grid-img-please{
+        height: 380px;
+    }
+    .grid-img-revolver{
+        height: 380px;
+    }
+    .grid-img-sgtpeppers{
+        height: 380px;
+    }
+    .grid-img-abbeyroad{
+        height: 380px;
+    }
+    .grid-texto-sgtpeppers{
+        font-size: 16px;
+    }
+    .grid-texto-abbeyroad{
+        font-size: 16px;
+    }
+    .mapa-texto p{
+        font-size: 15px;
     }
     .mapa-contactos{
         width: 360px;
