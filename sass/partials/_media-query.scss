@@ -1,0 +1,106 @@
+@use "./variables" as*;
+
+//media query--
+
+@media (max-width:480px){
+    footer{
+        @include flex-column;
+        .div-footer-apple{
+            @include flex-column;
+        }
+        .div-media-footer{
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+    }
+    .div-noticias-inicio{
+        @include flex-column;
+        padding: 0;
+        justify-content: center;
+    }
+    .primer-section-inicio{
+        font-size: 20px;
+        text-align: center;
+        img{
+            width: 380px;
+        }
+    }
+    .segundo-section-inicio{
+        width: 380px;
+    }
+    .card{
+        margin: 0px;
+        margin-top: 60px;
+    }
+    .cards-div1{
+        @include flex-column;
+    }
+    .cards-div2{
+        @include flex-column;
+    }
+    .card:hover{
+        transform: none;
+    }
+    .albumes-grid{
+        grid-template-areas: 
+        "titulo"
+        "please"
+        "texto1"
+        "revolver"
+        "texto2"
+        "sgtpeppers"
+        "texto3"
+        "abbeyroad"
+        "texto4";
+        grid-template-columns: 100%;
+        grid-template-rows: 0fr 0fr 200px 0fr 200px 0fr 200px 0fr 200px;
+        font-size: 18px;
+    }
+    .grid-img-please{
+        height: 340px;
+    }
+    .grid-img-revolver{
+        height: 340px;
+    }
+    .grid-img-sgtpeppers{
+        height: 340px;
+    }
+    .grid-img-abbeyroad{
+        height: 340px;
+    }
+    .grid-texto-sgtpeppers{
+        font-size: 16px;
+    }
+    .grid-texto-abbeyroad{
+        font-size: 16px;
+    }
+    .mapa-texto{
+        p{
+            font-size: 15px;
+        }
+    }
+    .mapa-contactos{
+        width: 340px;
+    }
+    .contactos-info{
+        text-align: center;
+    }
+    .formulario-section{
+        p{
+            text-align: center;
+        }
+    }
+    .div-imagenes-galeria{
+        @include flex-column;
+        justify-content: space-between;
+    }
+    .section2-galeria{
+        .div-imagenes-galeria{
+            img{
+                width: 380px;
+                margin: 10px;
+            }
+        }
+    }
+}

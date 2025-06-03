@@ -1,5 +1,13 @@
-
+//reset de css--
 @use "partials/reset";
+
+//variables--
 @use "partials/variables";
+
+//resto de partials--
 @use "partials/header-footer";
 @use "partials/index";
+@use "partials/pages";
+
+//media query--
+@use "partials/media-query";

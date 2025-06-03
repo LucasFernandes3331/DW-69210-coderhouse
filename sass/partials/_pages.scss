@@ -1,1 +1,275 @@
 @use "./variables" as*;
+
+// -- integrantes --
+
+.section-integrantes {
+    @include flex-column;
+}
+
+.cards-div1 {
+    display: flex;
+    padding: 20px;
+}
+
+.cards-div2 {
+    display: flex;
+    padding: 20px;
+}
+
+//.card aparte, para separar entre si las cartas
+
+.card{
+    margin: 30px;
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+
+// -- albumes --
+
+.albumes-grid {
+    display: grid;
+    grid-template-areas:
+        "titulo titulo titulo"
+        "please texto1 texto1"
+        "texto2 texto2 revolver"
+        "sgtpeppers texto3 texto3"
+        "texto4 texto4 abbeyroad";
+
+
+    grid-template-columns: 2fr 5fr 2fr;
+    grid-template-rows: 2fr 10fr 10fr 10fr 10fr;
+
+    align-items: center;
+    font-size: 28px;
+    padding-left: 14px;
+    color: $letras-color;
+}
+
+.grid-titulo {
+    grid-area: titulo;
+}
+
+.grid-texto-please {
+    grid-area: texto1;
+}
+
+.grid-texto-revolver {
+    grid-area: texto2;
+}
+
+
+.grid-texto-sgtpeppers {
+    grid-area: texto3;
+}
+
+.grid-texto-abbeyroad {
+    grid-area: texto4;
+}
+
+.grid-img-please {
+    height: 350px;
+    grid-area: please;
+}
+
+.grid-img-revolver {
+    height: 350px;
+    grid-area: revolver;
+}
+
+.grid-img-sgtpeppers {
+    height: 350px;
+    grid-area: sgtpeppers;
+}
+
+.grid-img-abbeyroad {
+    height: 350px;
+    grid-area: abbeyroad;
+}
+
+// -- contactos --
+
+.mapa-texto {
+    @include flex-column;
+    color: $letras-color;
+}
+
+.mapa-contactos {
+    @include mapsize (450px, 400px);
+}
+
+.formulario-section {
+    @include flex-column;
+    font-size: 20px;
+    color: $letras-color;
+}
+
+.formulario {
+    @include flex-column;
+}
+
+// -- galeria --
+
+.section2-galeria {
+    h2 {
+        text-align: center;
+        padding-top: 1em;
+    }
+}
+
+.div-imagenes-galeria {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0px 80px 0px;
+
+    .imagenes-galeria {
+        width: 500px;
+    }
+}
+
+.section-animacion-galeria{
+    padding-bottom: 60px;
+    p{
+        text-align: center;
+        font-size: 25px;
+        padding-bottom: 12px;
+        color: $letras-color;
+    }
+}
+
+/* From Uiverse.io by elijahgummer */
+.radio {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.radio>input {
+    position: absolute;
+    appearance: none;
+}
+
+.radio>label {
+    cursor: pointer;
+    font-size: 30px;
+    position: relative;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.radio>label>svg {
+    fill: #666;
+    transition: fill 0.3s ease;
+}
+
+.radio>label::before,
+.radio>label::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background-color: #ff9e0b;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(0);
+    transition:
+        transform 0.4s ease,
+        opacity 0.4s ease;
+    animation: particle-explosion 1s ease-out;
+}
+
+.radio>label::before {
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+}
+
+.radio>label::after {
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+}
+
+.radio>label:hover::before,
+.radio>label:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) scale(1.5);
+}
+
+.radio>label:hover {
+    transform: scale(1.2);
+    animation: pulse 0.6s infinite alternate;
+}
+
+/* Star glow and animation on hover */
+.radio>label:hover>svg {
+    fill: #ff9e0b;
+    filter: drop-shadow(0 0 15px rgba(255, 158, 11, 0.9));
+    animation: shimmer 1s ease infinite alternate;
+}
+
+.radio>input:checked+label>svg {
+    fill: #ff9e0b;
+    filter: drop-shadow(0 0 15px rgba(255, 158, 11, 0.9));
+    animation: pulse 0.8s infinite alternate;
+}
+
+.radio>input:checked+label~label>svg,
+.radio>input:checked+label>svg {
+    fill: #ff9e0b;
+    /* Highlight the stars */
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes particle-explosion {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        filter: drop-shadow(0 0 10px rgba(255, 158, 11, 0.5));
+    }
+
+    100% {
+        filter: drop-shadow(0 0 20px rgba(255, 158, 11, 1));
+    }
+}
+
+.radio>input:checked+label:hover,
+.radio>input:checked+label:hover~label {
+    fill: #e58e09;
+}
+
+.radio>label:hover,
+.radio>label:hover~label {
+    fill: #ff9e0b;
+}
+
+.radio input:checked~label svg {
+    fill: #ffa723;
+}
