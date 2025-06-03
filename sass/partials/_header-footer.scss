@@ -1,0 +1,53 @@
+@use "./variables" as*;
+
+
+
+header{
+    background-color: $header-footer-color;
+    font-family: $font-nunito;
+    .imagen-logo-header{
+        height: 60px;
+        padding-left: 30px;
+    }
+    .nav-link{
+        color: $letras-color;
+    }
+}
+
+footer{
+    background-color: $header-footer-color;
+    @include flex;
+    padding-top: 5px;
+}
+
+.apple-imagen-footer{
+    width: 100px;
+    padding: 12px;
+}
+
+.div-footer-apple{
+    @extend footer;
+    width: 40%;
+    justify-content: flex-start;
+    align-items: center;
+    p{
+        font-family: $font-nunito;
+        padding-left: 30px;
+        font-size: 14px;
+    }
+}
+
+.div-media-footer{
+    padding-right: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 40%;
+}
+
+.logos-media-footer{
+    width: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
