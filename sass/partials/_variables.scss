@@ -10,8 +10,11 @@ $letras-color: #000F;
 $font-nunito: "Nunito", sans-serif;
 $font-titulos: "Bebas Neue", sans-serif;
 
+//tamaño imagenes del index
+
 @mixin flex{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+

@@ -37,6 +37,7 @@ footer, .div-footer-apple {
 .div-footer-apple p {
   font-family: "Nunito", sans-serif;
   padding-left: 30px;
+  padding-top: 20px;
   font-size: 14px;
 }
 
@@ -53,6 +54,53 @@ footer, .div-footer-apple {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+body {
+  background-color: #706D54;
+  font-family: "Nunito", sans-serif;
+}
+
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+  color: #FCA313;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.primer-section-inicio {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background-abbeyroad.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.primer-section-inicio p {
+  color: #DBDBDB;
+  text-shadow: 2px -1px 7px rgb(112, 109, 84);
+  font-size: 140%;
+}
+
+.segundo-section-inicio {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.div-noticias-inicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: none;
+  padding: 20px 0px 20px 0px;
+}
+.div-noticias-inicio a {
+  text-decoration: none;
+  color: black;
+}
+
+.imagen-noticia-casting, .imagen-noticia-nowandthen, .imagen-noticia-letitbe {
+  width: 80%;
 }
 
 /*# sourceMappingURL=styles.css.map */
