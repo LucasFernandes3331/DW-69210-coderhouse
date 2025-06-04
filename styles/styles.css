@@ -115,7 +115,8 @@ h1 {
   margin: 30px;
   transition: 0.3s;
 }
-.card .card:hover {
+
+.card:hover {
   transform: scale(1.1);
 }
 
