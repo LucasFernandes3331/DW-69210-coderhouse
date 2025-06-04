@@ -2,14 +2,14 @@
 
 //body aplicable a todas las paginas--
 
-body{
+body {
     background-color: $body-color;
     font-family: $font-nunito;
 }
 
 //h1 aplicable a todas las paginas--
 
-h1{
+h1 {
     font-family: $font-titulos;
     color: #FCA313;
     text-align: center;
@@ -18,38 +18,35 @@ h1{
 
 //primer section del index--
 
-.primer-section-inicio{
+.primer-section-inicio {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/background-abbeyroad.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    p{
+    p {
         color: $header-footer-color;
-        text-shadow: 2px -1px 7px rgba(112,109,84,1);
-        font-size:140%;
+        text-shadow: 2px -1px 7px rgba(112, 109, 84, 1);
+        font-size: 140%;
     }
 }
 
 //segundo section del index (noticias)--
 
-.segundo-section-inicio{
+.segundo-section-inicio {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding-top: 20px;
-    .div-noticias-inicio{
-    @include flex;
-    justify-content: none;
-    padding: 20px 0px 20px 0px;
-    a{
-        text-decoration: none;
-        color: $letras-color;
+    .div-noticias-inicio {
+        @include flex;
+        justify-content: none;
+        padding: 20px 0px 20px 0px;
+        a {
+            text-decoration: none;
+            color: $letras-color;
+        }
+        .imagen-noticia-casting, .imagen-noticia-nowandthen, .imagen-noticia-letitbe {
+            width: 80%;
+        }
     }
 }
-.imagen-noticia-casting, .imagen-noticia-nowandthen, .imagen-noticia-letitbe{
-    width: 80%;
-}
-}
-
-
-

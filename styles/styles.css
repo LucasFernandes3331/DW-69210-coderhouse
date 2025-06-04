@@ -93,7 +93,7 @@ h1 {
   text-decoration: none;
   color: black;
 }
-.segundo-section-inicio .imagen-noticia-casting, .segundo-section-inicio .imagen-noticia-nowandthen, .segundo-section-inicio .imagen-noticia-letitbe {
+.segundo-section-inicio .div-noticias-inicio .imagen-noticia-casting, .segundo-section-inicio .div-noticias-inicio .imagen-noticia-nowandthen, .segundo-section-inicio .div-noticias-inicio .imagen-noticia-letitbe {
   width: 80%;
 }
 
