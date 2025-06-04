@@ -37,9 +37,7 @@ h1{
     flex-direction: column;
     text-align: center;
     padding-top: 20px;
-}
-
-.div-noticias-inicio{
+    .div-noticias-inicio{
     @include flex;
     justify-content: none;
     padding: 20px 0px 20px 0px;
@@ -48,7 +46,10 @@ h1{
         color: $letras-color;
     }
 }
-
 .imagen-noticia-casting, .imagen-noticia-nowandthen, .imagen-noticia-letitbe{
     width: 80%;
 }
+}
+
+
+
