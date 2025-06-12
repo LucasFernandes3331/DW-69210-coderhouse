@@ -1,47 +1,58 @@
 @use "./variables" as*;
 
-//media query--
+//media query-- mobile
 
 @media (max-width:480px) {
     footer {
         @include flex-column;
+
         .div-footer-apple {
             @include flex-column;
         }
+
         .div-media-footer {
             display: flex;
             justify-content: center;
             padding: 0;
         }
     }
+
     .primer-section-inicio {
         font-size: 16px;
         text-align: center;
+
         img {
             width: 100%;
         }
     }
+
     .segundo-section-inicio {
         width: 100%;
+
         .div-noticias-inicio {
             @include flex-column;
             padding: 0;
             justify-content: center;
         }
     }
+
     .card {
         margin: 0px;
         margin-top: 60px;
     }
+
     .cards-div1 {
         @include flex-column;
     }
+
     .cards-div2 {
         @include flex-column;
     }
+
     .card:hover {
         transform: none;
     }
+
     .albumes-grid {
         grid-template-areas:
             "titulo"
@@ -57,52 +68,251 @@
         grid-template-rows: 0fr 0fr 200px 0fr 200px 0fr 200px 0fr 200px;
         font-size: 18px;
     }
+
     .grid-img-please {
         height: 340px;
     }
+
     .grid-img-revolver {
         height: 340px;
     }
+
     .grid-img-sgtpeppers {
         height: 340px;
     }
+
     .grid-img-abbeyroad {
         height: 340px;
     }
+
     .grid-texto-sgtpeppers {
         font-size: 16px;
     }
+
     .grid-texto-abbeyroad {
         font-size: 16px;
     }
+
     .mapa-texto {
         p {
             font-size: 15px;
         }
     }
+
     .mapa-contactos {
         width: 340px;
     }
+
     .contactos-info {
         text-align: center;
     }
+
     .formulario-section {
         p {
             text-align: center;
         }
     }
+
     .section2-galeria {
         @include flex-column;
         justify-content: space-between;
+
         .div-imagenes-galeria {
             @include flex-column;
             justify-content: space-between;
+
             .imagenes-galeria {
                 width: 340px;
                 margin: 10px;
             }
         }
     }
+
+    .section-animacion-galeria {
+        width: 100%;
+    }
+}
+
+//media query-- tablet
+
+@media (min-width:481px) and (max-width:768px) {
+    footer {
+        @include flex-column;
+
+        .div-footer-apple {
+            @include flex-column;
+        }
+
+        .div-media-footer {
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+    }
+
+    .primer-section-inicio {
+        p {
+            font-size: 22px;
+        }
+
+        img {
+            width: 480px;
+        }
+    }
+
+    .segundo-section-inicio {
+
+        .div-noticias-inicio {
+            @include flex-column;
+
+            a {
+                font-size: 24px;
+            }
+
+            .imagen-noticia-casting,
+            .imagen-noticia-nowandthen,
+            .imagen-noticia-letitbe {
+                width: 480px;
+            }
+        }
+    }
+
+    .card {
+        margin: 0px;
+        margin-top: 30px;
+        font-size: 20px
+    }
+
+    .cards-div1 {
+        @include flex-column;
+    }
+
+    .cards-div2 {
+        @include flex-column;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+
+    .albumes-grid {
+        grid-template-areas:
+            "titulo "
+            "please"
+            "texto1"
+            "revolver"
+            "texto2"
+            "sgtpeppers"
+            "texto3"
+            "abbeyroad"
+            "texto4";
+        grid-template-columns: 100%;
+        grid-template-rows: 0fr 0fr 200px 0fr 200px 0fr 200px 0fr 200px;
+        font-size: 18px;
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            font-size: 24px;
+            text-align: left;
+        }
+    }
+
+    .grid-img-please {
+        height: 340px;
+        width: 380px;
+    }
+
+    .grid-img-revolver {
+        height: 340px;
+        width: 380px;
+    }
+
+    .grid-img-sgtpeppers {
+        height: 340px;
+        width: 380px;
+    }
+
+    .grid-img-abbeyroad {
+        height: 340px;
+        width: 380px;
+    }
+
+    .grid-texto-sgtpeppers {
+        font-size: 16px;
+    }
+
+    .grid-texto-abbeyroad {
+        font-size: 16px;
+    }
+
+    .mapa-texto {
+        @include flex-column;
+        color: $letras-color;
+        font-size: 22px;
+    }
+
+    .mapa-contactos {
+        height: 440px;
+        width: 420px;
+    }
+
+    .formulario-section {
+        margin: 24px 0px 20px 0px;
+
+        p {
+            font-size: 22px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .formulario {
+            font-size: 24px;
+        }
+    }
+
+    .section2-galeria {
+        @include flex-column;
+        justify-content: space-between;
+
+        .div-imagenes-galeria {
+            @include flex-column;
+            justify-content: space-between;
+
+            .imagenes-galeria {
+                width: 550px;
+                margin: 14px;
+            }
+        }
+    }
+
+    .section-animacion-galeria {
+        width: 100%;
+    }
+}
+
+//media query-- laptop (landscape) SOLO para pagina Galería debido a que se rompe en estas resoluciones
+
+@media (min-width:769px) and (max-width:1279px){
+    .section2-galeria {
+        @include flex-column;
+        justify-content: space-between;
+
+        .div-imagenes-galeria {
+            @include flex-column;
+            justify-content: space-between;
+
+            .imagenes-galeria {
+                width: 550px;
+                margin: 14px;
+            }
+        }
+    }
+
     .section-animacion-galeria {
         width: 100%;
     }
