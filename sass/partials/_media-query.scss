@@ -2,7 +2,13 @@
 
 //media query-- mobile
 
-@media (max-width:480px) {
+@media (min-width:0px) and (max-width:480px) {
+    .sticky-mobile{
+        position: sticky;
+        top: 0;
+        z-index: 1020;
+    }
+    
     footer {
         @include flex-column;
 
@@ -33,6 +39,18 @@
             @include flex-column;
             padding: 0;
             justify-content: center;
+            .imagen-noticia-casting{
+            width: 300px;
+            height: 240px;
+        }
+        .imagen-noticia-nowandthen{
+            width: 300px;
+            height: 240px;
+        }
+        .imagen-noticia-letitbe{
+            width: 300px;
+            height: 280px;
+        }
         }
     }
 
@@ -71,18 +89,22 @@
 
     .grid-img-please {
         height: 340px;
+        width: 340px;
     }
 
     .grid-img-revolver {
         height: 340px;
+        width: 340px;
     }
 
     .grid-img-sgtpeppers {
         height: 340px;
+        width: 340px;
     }
 
     .grid-img-abbeyroad {
         height: 340px;
+        width: 340px;
     }
 
     .grid-texto-sgtpeppers {
@@ -136,6 +158,12 @@
 //media query-- tablet
 
 @media (min-width:481px) and (max-width:768px) {
+    .sticky-mobile{
+        position: sticky;
+        top: 0;
+        z-index: 1020;
+    }
+    
     footer {
         @include flex-column;
 
@@ -166,14 +194,21 @@
             @include flex-column;
 
             a {
-                font-size: 24px;
+                font-size: 20px;
             }
 
-            .imagen-noticia-casting,
-            .imagen-noticia-nowandthen,
-            .imagen-noticia-letitbe {
-                width: 480px;
-            }
+            .imagen-noticia-casting{
+            width: 300px;
+            height: 240px;
+        }
+        .imagen-noticia-nowandthen{
+            width: 300px;
+            height: 240px;
+        }
+        .imagen-noticia-letitbe{
+            width: 300px;
+            height: 280px;
+        }
         }
     }
 
@@ -217,7 +252,7 @@
         }
 
         p {
-            font-size: 24px;
+            font-size: 18px;
             text-align: left;
         }
     }
@@ -284,30 +319,7 @@
             justify-content: space-between;
 
             .imagenes-galeria {
-                width: 550px;
-                margin: 14px;
-            }
-        }
-    }
-
-    .section-animacion-galeria {
-        width: 100%;
-    }
-}
-
-//media query-- laptop (landscape) SOLO para pagina Galería debido a que se rompe en estas resoluciones
-
-@media (min-width:769px) and (max-width:1279px){
-    .section2-galeria {
-        @include flex-column;
-        justify-content: space-between;
-
-        .div-imagenes-galeria {
-            @include flex-column;
-            justify-content: space-between;
-
-            .imagenes-galeria {
-                width: 550px;
+                width: 450px;
                 margin: 14px;
             }
         }

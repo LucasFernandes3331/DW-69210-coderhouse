@@ -14,6 +14,7 @@ h1 {
     color: #FCA313;
     text-align: center;
     padding-top: 20px;
+    text-shadow: 2px 2px 5px #000f;
 }
 
 //primer section del index--
@@ -41,12 +42,30 @@ h1 {
         @include flex;
         justify-content: none;
         padding: 20px 0px 20px 0px;
+        margin: 0px 15px 0px 15px;
+        padding: 22px 10px 18px 10px;
         a {
             text-decoration: none;
             color: $letras-color;
+            font-size: 18px;
+            text-shadow: 2px 2px 5px #000f;
         }
-        .imagen-noticia-casting, .imagen-noticia-nowandthen, .imagen-noticia-letitbe {
-            width: 80%;
+        .imagen-noticia-casting{
+            width: 400px;
+            height: 323px;
+            border-radius: 4%;
+            box-shadow: 5px 8px 8px #3a392d;
+        }
+        .imagen-noticia-nowandthen{
+            width: 400px;
+            border-radius: 4%;
+            box-shadow: 5px 8px 8px #3a392d;
+        }
+        .imagen-noticia-letitbe{
+            width: 340px;
+            height: 326px;
+            border-radius: 4%;
+            box-shadow: 5px 8px 8px #3a392d;
         }
     }
 }
